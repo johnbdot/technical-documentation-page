@@ -12,58 +12,242 @@
     <div id="container">
         <!-- Left, navigation -->
         <nav id="navbar">
-            <header>Python Tutorial</header>
+            <header>Python Cheatsheet</header>
             <ul>
-                <li><a href="#Intro" class="nav-link">Intro</a></li>
-                <li><a href="#Get_Started" class="nav-link">Get Started</a></li>
-                <li><a href="#Syntax" class="nav-link">Syntax</a></li>
-                <li><a href="#Comments" class="nav-link">Comments</a></li>
+                <li><a href="#The_Zen_of_Python" class="nav-link">The Zen of Python</a></li>
+                <li><a href="#Math_Operators" class="nav-link">Math Operators</a></li>
+                <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
+                <li><a href="#String_Concatenation_and_Replication" class="nav-link">String Concatenation and Replication</a></li>
                 <li><a href="#Variables" class="nav-link">Variables</a></li>
+                <li><a href="#Comments" class="nav-link">Comments</a></li>
             </ul>
         </nav>
         <!-- Right, main content -->
         <main id="main-doc">
-            <section id="Intro" class="main-section">
+            <section id="The_Zen_of_Python" class="main-section">
                 <header>
-                    Intro
+                    <h1>The Zen of Python</h1>
                 </header>
-                <p></p>
-                <p><code>print('hello world')</code></p>
+                <blockquote>
+                    Long time Pythoneer Tim Peters succinctly channels the BDFL's guiding principles for Python's design into 20 aphorisms, only 19 of which have been written down.
+                </blockquote>
+                <pre>
+                    <code>
+                        >>> import this
+                        The Zen of Python, by Tim Peters
+    
+                        Beautiful is better than ugly.
+                        Explicit is better than implicit.
+                        Simple is better than complex.
+                        Complex is better than complicated.
+                        Flat is better than nested.
+                        Sparse is better than dense.
+                        Readability counts.
+                        Special cases aren't special enough to break the rules.
+                        Although practicality beats purity.
+                        Errors should never pass silently.
+                        Unless explicitly silenced.
+                        In the face of ambiguity, refuse the temptation to guess.
+                        There should be one-- and preferably only one --obvious way to do it.
+                        Although that way may not be obvious at first unless you're Dutch.
+                        Now is better than never.
+                        Although never is often better than *right* now.
+                        If the implementation is hard to explain, it's a bad idea.
+                        If the implementation is easy to explain, it may be a good idea.
+                        Namespaces are one honking great idea -- let's do more of those!
+                    </code>
+                </pre>
             </section>
-            <section id="Get_Started" class="main-section">
+            <section id="Math_Operators" class="main-section">
                 <header>
-                    Get Started
+                    <h2>Math Operators</h2>
                 </header>
-                <p></p>
-                <p><code>print('hello world')</code></p>
+                <p>From Highest to Lowest precedence:</p>
+                <table>
+                    <tr>
+                        <th>Operators</th>
+                        <th>Operation</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td><code>**</code></td>
+                        <td>Exponent</td>
+                        <td><code>2 ** 3 = 8</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>%</code></td>
+                        <td>Modulus/Remainder</td>
+                        <td><code>22 % 8 = 6</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>//</code></td>
+                        <td>Intger division</td>
+                        <td><code>22 // 8 = 2</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>/</code></td>
+                        <td>Division</td>
+                        <td><code>22 / 8 = 2.75</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>*</code></td>
+                        <td>Multiplication</td>
+                        <td><code>3 * 3 = 9</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>-</code></td>
+                        <td>Subtraction</td>
+                        <td><code>5 - 2 = 3</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>+</code></td>
+                        <td>Addition</td>
+                        <td><code>2 + 2 = 4</code></td>
+                    </tr>
+                </table>
+                <p>Examples of expressions in the interactive shell:</p>
+                <pre>
+                    <code>
+                        >>> 2 + 3 * 6
+                        20
+                    </code>
+                </pre>
+                <pre>
+                    <code>
+                        >>> (2 + 3) * 6
+                        30
+                    </code>
+                </pre>
+                <pre>
+                    <code>
+                        >>> 2 ** 8
+                        256
+                    </code>
+                </pre>
+                <pre>
+                    <code>
+                        >>> 23 // 7
+                        3
+                    </code>
+                </pre>
+                <pre>
+                    <code>
+                        >>> 23 % 7
+                        2
+                    </code>
+                </pre>
+                <pre>
+                    <code>
+                        >>> (5 - 1) * ((7 + 1) / (3 - 1))
+                        16.0
+                    </code>
+                </pre>
             </section>
-            <section id="Syntax" class="main-section">
+            <section id="Data_Types" class="main-section">
                 <header>
-                    Syntax
+                    <h2>Data Types</h2>
                 </header>
-                <p></p>
-                <p><code>print('hello world')</code></p>
+                <table>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Examples</th>
+                    </tr>
+                    <tr>
+                        <td>Integers</td>
+                        <td><code>-2, -1, 0, 1, 2, 3, 4, 5</code></td>
+                    </tr>
+                    <tr>
+                        <td>Floating-point numbers</td>
+                        <td><code>-1.25, -1.0, --0.5, 0.0, 0.5, 1.0, 1.25</code></td>
+                    </tr>
+                    <tr>
+                        <td>Strings</td>
+                        <td><code>'a', 'aa', 'aaa', 'Hello!', '11 cats'</code></td>
+                    </tr>
+                </table>
             </section>
-            <section id="Comments" class="main-section">
+            <section id="String_Concatenation_and_Replication" class="main-section">
                 <header>
-                    Comments
+                    <h2>String Concatenation and Replication</h2>
                 </header>
-                <p></p>
-                <p><code>print('hello world')</code></p>
+                <p>String concatenation:</p>
+                <pre>
+                    <code>
+                        >>> 'Alice' 'Bob'
+                        'AliceBob'
+                    </code>
+                </pre>
+                <p>Note: Avoid <code>+</code> operator for string concatenation. Prefer string formatting.</p>
+                <p>String Replication:</p>
+                <pre>
+                    <code>
+                        >>> 'Alice' * 5
+                        'AliceAliceAliceAliceAlice'
+                    </code>
+                </pre>
             </section>
             <section id="Variables" class="main-section">
                 <header>
-                    Variables
+                    <h2>Variables</h2>
                 </header>
-                <p></p>
-                <p><code>print('hello world')</code></p>
-                <ul>
-                    <li>item 1</li>
-                    <li>item 2</li>
-                    <li>item 3</li>
-                    <li>item 4</li>
-                    <li>item 5</li>
-                </ul>
+                <p>You can name a variable anything as long as it obeys the following rules:</p>
+                <ol>
+                    <li>It can be only one word.</li>
+                    <li>It can use only letters, numbers, and the underscore <code>(_)</code> character.</li>
+                    <li>It can’t begin with a number.</li>
+                    <li>Variable name starting with an underscore <code>(_)</code> are considered as "unuseful`.</li>
+                    <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+                </ol>
+                <p>Example:</p>
+                <pre>
+                    <code>
+                        >>> spam = 'Hello'
+                        >>> spam
+                        'Hello'
+                    </code>
+                </pre>
+                <pre>
+                    <code>
+                        >>> _spam = 'Hello'
+                    </code>
+                </pre>
+                <p><code>_spam</code> should not be used again in the code.</p>
+            </section>
+            <section id="Comments" class="main-section">
+                <header>
+                    <h2>Comments</h2>
+                </header>
+                <p>Inline comment:</p>
+                <pre>
+                    <code>
+                        # This is a comment
+                    </code>
+                </pre>
+                <p>Multiline comment:</p>
+                <pre>
+                    <code>
+                        # This is a
+                        # multiline comment
+                    </code>
+                </pre>
+                <p>Code with a comment:</p>
+                <pre>
+                    <code>
+                        a = 1 # initialization
+                    </code>
+                </pre>
+                <p>Please note the two spaces in front of the comment.</p>
+                <p>Function docstring:</p>
+                <pre>
+                    <code>
+                        def foo():
+                            """
+                            This is a function docstring
+                            You can also use:
+                            ''' Function Docstring '''
+                            """
+                    </code>
+                </pre>
             </section>
         </main>
     </div>
