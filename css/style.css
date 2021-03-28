@@ -5,5 +5,14 @@
 }
 
 #container {
+    border: 5px solid blue;
     display: flex;
+}
+
+#navbar {
+    border: 5px solid red;
+}
+
+#main-doc {
+    border: 5px solid green;
 }
