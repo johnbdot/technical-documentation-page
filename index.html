@@ -12,7 +12,9 @@
     <div id="container">
         <!-- Left, navigation -->
         <nav id="navbar">
-            <header>Python Cheatsheet</header>
+            <header>
+                <h1>Python Cheatsheet</h1>
+            </header>
             <ul>
                 <li><a href="#The_Zen_of_Python" class="nav-link">The Zen of Python</a></li>
                 <li><a href="#Math_Operators" class="nav-link">Math Operators</a></li>
@@ -26,44 +28,41 @@
         <main id="main-doc">
             <section id="The_Zen_of_Python" class="main-section">
                 <header>
-                    <h1>The Zen of Python</h1>
+                    <h2>The Zen of Python</h2>
                 </header>
-                <blockquote>
+                <p class="margin-bottom">
                     Long time Pythoneer Tim Peters succinctly channels the BDFL's guiding principles for Python's design into 20 aphorisms, only 19 of which have been written down.
-                </blockquote>
+                </p>
                 <pre>
-                    <code>
-                        >>> import this
-                        The Zen of Python, by Tim Peters
-    
-                        Beautiful is better than ugly.
-                        Explicit is better than implicit.
-                        Simple is better than complex.
-                        Complex is better than complicated.
-                        Flat is better than nested.
-                        Sparse is better than dense.
-                        Readability counts.
-                        Special cases aren't special enough to break the rules.
-                        Although practicality beats purity.
-                        Errors should never pass silently.
-                        Unless explicitly silenced.
-                        In the face of ambiguity, refuse the temptation to guess.
-                        There should be one-- and preferably only one --obvious way to do it.
-                        Although that way may not be obvious at first unless you're Dutch.
-                        Now is better than never.
-                        Although never is often better than *right* now.
-                        If the implementation is hard to explain, it's a bad idea.
-                        If the implementation is easy to explain, it may be a good idea.
-                        Namespaces are one honking great idea -- let's do more of those!
-                    </code>
-                </pre>
+>>> import this
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!</pre>
             </section>
             <section id="Math_Operators" class="main-section">
                 <header>
                     <h2>Math Operators</h2>
                 </header>
-                <p>From Highest to Lowest precedence:</p>
-                <table>
+                <p class="margin-bottom">From Highest to Lowest precedence:</p>
+                <table class="margin-bottom">
                     <tr>
                         <th>Operators</th>
                         <th>Operation</th>
@@ -105,43 +104,37 @@
                         <td><code>2 + 2 = 4</code></td>
                     </tr>
                 </table>
-                <p>Examples of expressions in the interactive shell:</p>
+                <p class="margin-bottom">Examples of expressions in the interactive shell:</p>
+                <div class="margin-bottom">
                 <pre>
-                    <code>
-                        >>> 2 + 3 * 6
-                        20
-                    </code>
-                </pre>
+>>> 2 + 3 * 6
+20</pre>
+                </div>
+                <div class="margin-bottom">
                 <pre>
-                    <code>
-                        >>> (2 + 3) * 6
-                        30
-                    </code>
-                </pre>
+>>> (2 + 3) * 6
+30</pre>
+                </div>
+                <div class="margin-bottom">
                 <pre>
-                    <code>
-                        >>> 2 ** 8
-                        256
-                    </code>
-                </pre>
+>>> 2 ** 8
+256</pre>
+                </div>
+                <div class="margin-bottom">
                 <pre>
-                    <code>
-                        >>> 23 // 7
-                        3
-                    </code>
-                </pre>
+>>> 23 // 7
+3</pre>
+                </div>
+                <div class="margin-bottom">
                 <pre>
-                    <code>
-                        >>> 23 % 7
-                        2
-                    </code>
-                </pre>
+>>> 23 % 7
+2</pre>
+                </div>
+                <div>
                 <pre>
-                    <code>
-                        >>> (5 - 1) * ((7 + 1) / (3 - 1))
-                        16.0
-                    </code>
-                </pre>
+>>> (5 - 1) * ((7 + 1) / (3 - 1))
+16.0</pre>
+                </div>
             </section>
             <section id="Data_Types" class="main-section">
                 <header>
@@ -170,84 +163,64 @@
                 <header>
                     <h2>String Concatenation and Replication</h2>
                 </header>
-                <p>String concatenation:</p>
+                <p class="margin-bottom">String concatenation:</p>
+                <pre class="margin-bottom">
+>>> 'Alice' 'Bob'
+'AliceBob'</pre>
+                <p class="margin-bottom">Note: Avoid <code>+</code> operator for string concatenation. Prefer string formatting.</p>
+                <p class="margin-bottom">String Replication:</p>
                 <pre>
-                    <code>
-                        >>> 'Alice' 'Bob'
-                        'AliceBob'
-                    </code>
-                </pre>
-                <p>Note: Avoid <code>+</code> operator for string concatenation. Prefer string formatting.</p>
-                <p>String Replication:</p>
-                <pre>
-                    <code>
-                        >>> 'Alice' * 5
-                        'AliceAliceAliceAliceAlice'
-                    </code>
-                </pre>
+>>> 'Alice' * 5
+'AliceAliceAliceAliceAlice'</pre>
             </section>
             <section id="Variables" class="main-section">
                 <header>
                     <h2>Variables</h2>
                 </header>
-                <p>You can name a variable anything as long as it obeys the following rules:</p>
-                <ol>
+                <p class="margin-bottom">You can name a variable anything as long as it obeys the following rules:</p>
+                <ol class="margin-bottom">
                     <li>It can be only one word.</li>
                     <li>It can use only letters, numbers, and the underscore <code>(_)</code> character.</li>
                     <li>It can’t begin with a number.</li>
-                    <li>Variable name starting with an underscore <code>(_)</code> are considered as "unuseful`.</li>
+                    <li>Variable name starting with an underscore <code>(_)</code> are considered as "unuseful".</li>
                     <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
                 </ol>
-                <p>Example:</p>
+                <p class="margin-bottom">Example:</p>
+                <div class="margin-bottom">
                 <pre>
-                    <code>
-                        >>> spam = 'Hello'
-                        >>> spam
-                        'Hello'
-                    </code>
-                </pre>
+>>> spam = 'Hello'
+>>> spam
+'Hello'</pre>
+                </div>
+                <div class="margin-bottom">
                 <pre>
-                    <code>
-                        >>> _spam = 'Hello'
-                    </code>
-                </pre>
+>>> _spam = 'Hello'</pre>
+                </div>
                 <p><code>_spam</code> should not be used again in the code.</p>
             </section>
             <section id="Comments" class="main-section">
                 <header>
                     <h2>Comments</h2>
                 </header>
-                <p>Inline comment:</p>
-                <pre>
-                    <code>
-                        # This is a comment
-                    </code>
-                </pre>
-                <p>Multiline comment:</p>
-                <pre>
-                    <code>
-                        # This is a
-                        # multiline comment
-                    </code>
-                </pre>
-                <p>Code with a comment:</p>
-                <pre>
-                    <code>
-                        a = 1 # initialization
-                    </code>
-                </pre>
-                <p>Please note the two spaces in front of the comment.</p>
-                <p>Function docstring:</p>
-                <pre>
-                    <code>
-                        def foo():
-                            """
-                            This is a function docstring
-                            You can also use:
-                            ''' Function Docstring '''
-                            """
-                    </code>
-                </pre>
+                <p class="margin-bottom">Inline comment:</p>
+                <pre class="margin-bottom">
+# This is a comment</pre>
+                <p class="margin-bottom">Multiline comment:</p>
+                <pre class="margin-bottom">
+# This is a
+# multiline comment</pre>
+                <p class="margin-bottom">Code with a comment:</p>
+                <pre class="margin-bottom">
+a = 1  # initialization</pre>
+                <p class="margin-bottom">Please note the two spaces in front of the comment.</p>
+                <p class="margin-bottom">Function docstring:</p>
+                <pre class="margin-bottom">
+def foo():
+    """
+    This is a function docstring
+    You can also use:
+    ''' Function Docstring '''
+    """</pre>
             </section>
         </main>
     </div>
