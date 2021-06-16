@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  font-family: "Merriweather", serif;
+}
+
+#container {
+  display: flex;
+  position: relative;
+}
+
+#navbar {
+  height: 100%;
+  width: 330px;
+  position: fixed;
+  background-color: #f1f1f1;
+}
+
+#main-doc {
+  padding-left: 345px;
+  width: 655px;
+}
+
+.margin-bottom {
+  margin-bottom: 15px;
+}
+
+#The_Zen_of_Python header h2 {
+  padding-top: 30px;
+}
+
+h1 {
+  text-align: center;
+  padding: 30px 0;
+}
+
+h2 {
+  padding: 30px 0;
+  font-weight: bold;
+}
+
+table {
+  width: 700px;
+}
+
+th {
+  padding: 12px;
+  text-align: left;
+  background-color: #244c53;
+  color: white;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+ul li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #244c53;
+  color: white;
+}
+
+ol {
+  padding-left: 30px;
+}
+
+code {
+  background-color: #eee;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: inline-block;
+  margin: 0;
+  padding: 20px;
+  width: 655px;
+}
+
+.zen-background {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: inline-block;
+  margin: 0;
+  padding: 20px;
+  width: 655px;
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    font-size: 3.5vw;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  #container {
+    display: flex;
+    position: inherit;
+    width: auto;
+    padding: 10px;
+  }
+
+  #main-doc {
+    padding-left: 0px;
+    width: 95vw;
+  }
+
+  .zen-background {
+    width: auto;
+  }
+
+  table {
+    width: 95vw;
+  }
+
+  pre {
+    width: 85.5vw;
+  }
+
+  ol {
+    padding-left: 30px;
+  }
+}
