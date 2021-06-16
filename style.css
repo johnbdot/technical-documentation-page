@@ -126,12 +126,12 @@ pre {
     display: flex;
     position: inherit;
     width: auto;
-    padding: 10px;
+    padding: 0px;
   }
 
   #main-doc {
     padding-left: 0px;
-    width: 95vw;
+    width: 100vw;
   }
 
   .zen-background {
@@ -139,11 +139,11 @@ pre {
   }
 
   table {
-    width: 95vw;
+    width: 100vw;
   }
 
   pre {
-    width: 85.5vw;
+    width: 100vw;
   }
 
   ol {
