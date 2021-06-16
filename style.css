@@ -16,6 +16,7 @@ html {
 #container {
   display: flex;
   position: relative;
+  width: 100vw;
 }
 
 #navbar {
@@ -126,12 +127,11 @@ pre {
     display: flex;
     position: inherit;
     width: auto;
-    padding: 0px;
   }
 
   #main-doc {
-    padding-left: 0px;
     width: 100vw;
+    padding: 10px;
   }
 
   .zen-background {
@@ -139,11 +139,12 @@ pre {
   }
 
   table {
-    width: 100vw;
+    width: 96vw;
   }
 
   pre {
     width: 100vw;
+    display: block;
   }
 
   ol {
