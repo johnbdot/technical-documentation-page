@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>John Bouakhasith: Technical Documentation Page</title>
   </head>
   <body>
@@ -22,6 +26,9 @@
           <a href="#Variables" class="nav-link">Variables</a>
           <a href="#Comments" class="nav-link">Comments</a>
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
       <!-- Right, main content -->
       <main id="main-doc">
@@ -264,5 +271,17 @@ def foo():
         </section>
       </main>
     </div>
+
+    <!-- JavaScript -->
+    <script>
+      function myFunction() {
+        var x = document.querySelector("#links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
